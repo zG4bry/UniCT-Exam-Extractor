@@ -1,0 +1,25 @@
+# Ambienti Virtuali
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Cache di Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Database e File di Test
+esami.db
+*.ics
+
+# Configurazioni Editor e IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignora i PDF (potenzialmente contengono dati sensibili/personali o sono molto grandi)
+*.pdf
