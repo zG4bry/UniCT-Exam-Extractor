@@ -30,7 +30,6 @@ Il progetto è strutturato in moduli indipendenti per separare la logica di estr
 | **`exam_services.py`**   | Logica core: interazione con SQLite (`ExamRepository`), parsing date e generazione `.ics` (`CalendarExporter`).                               |
 | **`gestore_esami.py`**   | Interfaccia CLI utente. Permette di consultare il database e gestire le esportazioni.                                                         |
 | **`parser.py`**         | Motore di ingestion. Utilizza `pdfplumber` per estrarre i dati dai PDF e popolarli nel database.                                             |
-| **`inspect_pdf.py`**     | Strumento diagnostico per analizzare la struttura dei PDF in caso di cambiamenti nel layout universitario.                                |
 
 ---
 
@@ -86,9 +85,6 @@ python3 gestore_esami.py --cerca "Analisi" --ics --output "analisi.ics"
 
 ---
 
-## 🤝 Note sullo Sviluppo
-
-Attualmente il parser è tarato sulla struttura dei PDF del **DMI (Dipartimento di Matematica e Informatica)**. Qualora il formato dovesse cambiare o si volesse estendere il supporto ad altri dipartimenti, si consiglia di utilizzare `inspect_pdf.py` per studiare la nuova struttura dei dati.
 
 ## 📝 Licenza
 
